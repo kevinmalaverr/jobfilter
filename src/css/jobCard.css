@@ -1,11 +1,26 @@
 .job-card {
   display: grid;
   grid-template-columns: 1fr;
-  background: var(--color-filter-tablets);
+  background: #fff;
   box-shadow: var(--shadow);
   padding: 16px;
 }
 
 .top {
   display: flex;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px;
+  background: var(--color-filter-tablets);
+  color: var(--color-primary);
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 13px;
 }

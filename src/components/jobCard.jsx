@@ -33,7 +33,7 @@ const JobCard = ({ data }) => {
       </div>
       <hr />
 
-      <div className="list">
+      <div className="tag-list">
         <div className="tag">{role}</div>
         <div className="tag">{level}</div>
         {languages
