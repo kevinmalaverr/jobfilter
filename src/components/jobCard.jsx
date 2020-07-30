@@ -13,23 +13,28 @@ const JobCard = ({ data }) => {
     role,
     languages,
     tools,
-    isNew,
     postedAt,
   } = data;
 
+  const isNew = data.new;
+
   return (
-    <div className={`job-card ${featured ? "featured" : null}`}>
+    <div className={`job-card ${featured ? "card-featured" : null}`}>
       <img src={logo} alt="" />
       <div className="info">
         <div className="top">
           <p>{company}</p>
-          {isNew ? <p>NEW!</p> : null}
-          {featured ? <p>featured</p> : null}
+          {isNew ? <div className="new">NEW!</div> : null}
+          {featured ? <div className="featured">FEATURED</div> : null}
         </div>
-        <p>{position}</p>
-        <p>
-          {postedAt} *{contract} *{location}
-        </p>
+        <div className="position">
+          <p>{position}</p>
+        </div>
+        <div className="">
+          <p>
+            {postedAt} *{contract} *{location}
+          </p>
+        </div>
       </div>
       <hr />
 
