@@ -1,0 +1,11 @@
+.job-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--color-filter-tablets);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+.top {
+  display: flex;
+}
