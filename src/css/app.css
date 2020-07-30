@@ -10,9 +10,9 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -22,8 +22,13 @@ body {
   font-weight: 500;
 }
 
+#root {
+  width: 100%;
+}
+
 .bg {
   height: 140px;
+  width: 100%;
   background: var(--color-primary);
   position: relative;
   z-index: -1;
@@ -42,18 +47,36 @@ body {
 
 main {
   padding: 16px;
+  margin: auto;
   margin-top: -50px;
+  max-width: 1000px;
 }
 
 .search-bar {
-  background: var(--color-filter-tablets);
   height: 50px;
+  background: #fff;
+  width: 100%;
   box-shadow: var(--shadow);
   border-radius: var(--radius);
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.filter {
+  width: 100%;
 }
 
 .job-list {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 36px;
+}
+
+@media screen and (min-width: 600px) {
+  .job-list {
+    gap: 16px;
+  }
 }

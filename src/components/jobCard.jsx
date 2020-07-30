@@ -1,5 +1,6 @@
 import React from "react";
 import "css/jobCard.css";
+import image from "images/account.svg";
 
 const JobCard = ({ data }) => {
   const {
@@ -20,7 +21,7 @@ const JobCard = ({ data }) => {
 
   return (
     <div className={`job-card ${featured ? "card-featured" : null}`}>
-      <img src={logo} alt="" />
+      <img className="logo" src={image} alt="" />
       <div className="info">
         <div className="top">
           <p>{company}</p>
@@ -30,13 +31,12 @@ const JobCard = ({ data }) => {
         <div className="position">
           <p>{position}</p>
         </div>
-        <div className="">
+        <div className="time">
           <p>
-            {postedAt} *{contract} *{location}
+            {postedAt} · {contract} · {location}
           </p>
         </div>
       </div>
-      <hr />
 
       <div className="tag-list">
         <div className="tag">{role}</div>

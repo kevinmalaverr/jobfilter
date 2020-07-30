@@ -10,7 +10,10 @@ const App = () => {
       <div className="bg"></div>
       <main>
         <header>
-          <div className="search-bar"></div>
+          <div className="search-bar">
+            <div className="filter"></div>
+            <div className="clear">clear</div>
+          </div>
         </header>
         <div className="job-list">
           {data.map((job) => (
