@@ -1,6 +1,6 @@
-import React from "react";
-import "css/jobCard.css";
-import image from "images/account.svg";
+import React from 'react';
+import 'css/jobCard.css';
+import image from 'images/account.svg';
 
 const JobCard = ({ data }) => {
   const {
@@ -20,8 +20,8 @@ const JobCard = ({ data }) => {
   const isNew = data.new;
 
   return (
-    <div className={`job-card ${featured ? "card-featured" : null}`}>
-      <img className="logo" src={image} alt="" />
+    <div className={`job-card ${featured ? 'card-featured' : null}`}>
+      <img className="logo" src={logo} alt="" />
       <div className="info">
         <div className="top">
           <p>{company}</p>

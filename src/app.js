@@ -1,8 +1,8 @@
-import React from "react";
-import "css/app.css";
-import data from "data.json";
-import JobCard from "components/jobCard";
-import { useState } from "react";
+import React from 'react';
+import 'css/app.css';
+import data from 'data.json';
+import JobCard from 'components/jobCard';
+import { useState } from 'react';
 
 const filterJob = (jobs, filters) => {
   let jobsFiltered = [];
@@ -39,9 +39,9 @@ const filterJob = (jobs, filters) => {
 
 const App = () => {
   const [filters, setfilters] = useState({
-    role: "",
-    level: "",
-    languages: ["HTML"],
+    role: '',
+    level: '',
+    languages: [],
   });
   console.log(data);
 
